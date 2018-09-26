@@ -1,6 +1,6 @@
 based on # Learn Nightwatch: Complete Beginners Tutorial  url: git+https://github.com/dwyl/learn-nightwatch.git
 
-added my file hn.js to test HackerNews on 'http://brookapps.co.uk/hn/'
+added my file wam.js to test HackerNews on 'http://brookapps.co.uk/Whack-a-mole/'
 
 _**Automated Acceptance Testing** using **Real Browsers**_.
 
