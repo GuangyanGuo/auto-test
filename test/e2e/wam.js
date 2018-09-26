@@ -1,20 +1,20 @@
 var conf = require('../../nightwatch.conf.js');
 
 module.exports = {
-  'Demo test brookapps/hn': function (browser) {
+  'Demo test brookapps/whack-a-mole': function (browser) {
     browser
-      .url('http://brookapps.co.uk/hn')   
+      .url('http://brookapps.co.uk/whack-a-mole/')   
       .waitForElementVisible('body'); 
 	  browser.pause(1000);
       // check if we are seeing the div with id 'stories' has children div
-      browser.element('css selector', '#stories > div', function(result) {
+      browser.element('css selector', 'button', function(result) {
         if(result.status != -1) { //'stories child div exists, click the first one
-		  console.log('stories visible, can click');
-          browser.click('#stories > div:nth-child(1)')
-          .waitForElementVisible('#comment');
+		  console.log('button visible, can click');
+          browser.click('button')
+          .waitForElementVisible('.Mole');
 		  
         }else {
-		  console.log('stories not visible, can not click');
+		  console.log('button not visible, can not click');
 		}
       });
    
